@@ -530,4 +530,79 @@ input[type='submit']:hover {
 }
 
 @media screen and (max-width: 500px) {
+  .container {
+    width: 450px;
+  }
+  .flex-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  nav a {
+    border-top: 1px solid black;
+    width: 100%;
+    text-align: center;
+  }
+  nav a:last-child {
+    border-bottom: 1px solid black;
+  }
+  .flex-section {
+    margin-right: 255px;
+  }
+
+  .flex-about {
+    flex-wrap: wrap;
+  }
+
+  .flex-about div {
+    width: 80%;
+    margin: 15px;
+  }
+
+  .flex-services {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 95%;
+    margin-left: 0px;
+    padding-left: 15px;
+  }
+
+  .flex-services div {
+    width: 90%;
+    margin: 0px;
+  }
+  .height {
+    margin-left: 450px;
+  }
+
+  .middle-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .middle-img img {
+    max-width: 100%;
+  }
+
+  .flex-header {
+    margin: 20px;
+  }
+
+  .flex-header a {
+    padding: 20px;
+  }
+  .copy {
+    margin: 20px 0;
+    text-align: center;
+  }
+  footer {
+    margin: 0;
+  }
+
+  address {
+    padding-left: 10px;
+  }
 }
