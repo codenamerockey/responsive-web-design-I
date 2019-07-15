@@ -503,11 +503,31 @@ input[type='submit']:hover {
 
   .flex-services {
     margin-left: 20px;
+    width: 74%;
     font-size: 1.4rem;
+    border-bottom: 2px solid black;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .hr-about {
+    border-bottom: 2px solid black;
+    width: 74%;
+    margin-left: 22px;
   }
 
   .copy {
     text-align: start;
     margin-left: 300px;
   }
+
+  .flex-about div {
+    width: 35%;
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
 }
