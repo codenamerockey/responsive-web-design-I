@@ -1,3 +1,608 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* Use your own code or past solution for Great Idea Web Page CSS here! *
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+.flex-header {
+  display: flex;
+  justify-content: space-evenly;
+  width: 45%;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+nav {
+  margin-top: 30px;
+  margin-left: 300px;
+}
+
+.link-services {
+  margin-right: 10px;
+}
+
+.link-product {
+  margin-right: 10px;
+}
+
+.link-vision {
+  margin-right: 10px;
+}
+
+.link-features {
+  margin-right: 10px;
+}
+
+.link-about {
+  margin-right: 10px;
+}
+
+.inlineLogo {
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.flex-section {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 60px 0 80px 95px;
+}
+
+.main-heading {
+  height: 200px;
+  width: 350px;
+  line-height: 70px;
+  font-size: 5.9rem;
+  text-align: center;
+  padding: 0px 0px 10px 10px;
+  margin-top: 65px;
+  margin-bottom: 50px;
+  letter-spacing: 0.2px;
+  line-height: 69px;
+}
+
+span {
+  display: block;
+}
+
+.button {
+  border: 1px solid gray;
+  text-decoration: none;
+  color: #333;
+  padding: 5px 45px;
+  margin-left: 94px;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.middle-img {
+  width: 89%;
+  margin: 0 20px 20px 60px;
+}
+
+.flex-about {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.flex-about div {
+  width: 40%;
+  margin: 15px;
+}
+
+.flex-services {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 0 0 67px;
+}
+
+.flex-services div {
+  width: 40%;
+}
+
+.flex-services div p {
+  font-size: 1.2rem;
+  margin-top: 0px;
+}
+
+.products {
+  margin-left: 45px;
+  margin-right: 30px;
+}
+
+.vision {
+  margin-left: 30px;
+}
+
+.h3services {
+  padding-top: 5px;
+}
+.copy {
+  text-align: center;
+  margin-top: 60px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: crimson;
+}
+
+/* Service Page CSS */
+.services-header-img {
+  width: 95%;
+  margin: 10px 5px;
+}
+
+hr.bottom {
+  width: 97%;
+  border: 2px solid black;
+}
+
+hr.top {
+  border: 1px solid black;
+  width: 70%;
+}
+
+.features {
+  font-size: 1.4rem;
+  margin-top: 15px;
+}
+
+.about {
+  font-size: 1.4rem;
+  width: 30px;
+  margin-top: 15px;
+}
+
+.service-header-child {
+  font-size: 40px;
+  margin: 10px;
+}
+
+.service-header p {
+  line-height: 25px;
+  margin-bottom: 50px;
+  margin-top: 0;
+  margin-left: 10px;
+  width: 97%;
+}
+
+.main-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.box {
+  width: 47%;
+  height: 300px;
+  border: 1px solid black;
+  margin: 20px 2px;
+  padding: 25px;
+  background-color: #f1f2f6;
+}
+
+.service-button {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 0px 25px;
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+
+p {
+  margin: 40px 0;
+}
+
+.facts-section {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.facts-services {
+  width: 50%;
+  margin-right: 200px;
+}
+
+.facts-list {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+.facts-image {
+  width: 40%;
+}
+
+ul li {
+  margin-bottom: 20px;
+}
+
+/* Style the container/contact section */
+
+footer {
+  margin-left: 50px;
+}
+.container-contact {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.main-heading-contact {
+  text-shadow: 2px 2px 0px white, 4px 4px 0px #888;
+}
+
+.contact-button {
+  box-shadow: 5px 5px 5px #888;
+}
+
+/* Contact Form CSS */
+
+.headerImg-contact {
+  border: 10px outset crimson;
+  border-radius: 50%;
+}
+
+input[type='text'],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type='submit'] {
+  background-color: #ccc;
+  color: #333;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px #888;
+}
+
+input[type='submit']:hover {
+  background-color: crimson;
+  color: white;
+}
+
+/********* Media queries*/
+
+@media screen and (max-width: 800px) {
+  header {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .headerImg {
+    display: none;
+  }
+
+  nav {
+    margin-left: 0px;
+    margin-right: 20px;
+  }
+
+  .flex-header {
+    width: 100%;
+    margin-left: 80px;
+  }
+
+  .link-services {
+    margin-right: 0px;
+  }
+
+  .link-product {
+    margin-right: 0px;
+  }
+
+  .link-vision {
+    margin-right: 0px;
+  }
+
+  .link-features {
+    margin-right: 0px;
+  }
+
+  .link-about {
+    margin-right: 0px;
+  }
+
+  .flex-about {
+    justify-content: flex-start;
+  }
+
+  .middle-img {
+    width: 75%;
+    height: 50%;
+    margin: 0 10px 20px 15px;
+  }
+
+  .main-heading {
+    margin-right: 300px;
+  }
+
+  .flex-services {
+    margin-left: 20px;
+    width: 74%;
+    font-size: 1.4rem;
+    border-bottom: 2px solid black;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .hr-about {
+    border-bottom: 2px solid black;
+    width: 74%;
+    margin-left: 22px;
+  }
+
+  .copy {
+    text-align: start;
+    margin-left: 300px;
+  }
+
+  .flex-about div {
+    width: 35%;
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 450px;
+  }
+  .flex-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  nav a {
+    border-top: 1px solid black;
+    width: 100%;
+    text-align: center;
+  }
+  nav a:last-child {
+    border-bottom: 1px solid black;
+  }
+  .flex-section {
+    margin-right: 255px;
+  }
+
+  .flex-about {
+    flex-wrap: wrap;
+  }
+
+  .flex-about div {
+    width: 80%;
+    margin: 15px;
+  }
+
+  .flex-services {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 95%;
+    margin-left: 0px;
+    padding-left: 15px;
+  }
+
+  .flex-services div {
+    width: 90%;
+    margin: 0px;
+  }
+  .height {
+    margin-left: 450px;
+  }
+
+  .middle-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .middle-img img {
+    max-width: 100%;
+  }
+
+  .flex-header {
+    margin: 20px;
+  }
+
+  .flex-header a {
+    padding: 20px;
+  }
+  .copy {
+    margin: 20px 0;
+    text-align: center;
+  }
+  footer {
+    margin: 0;
+  }
+
+  address {
+    padding-left: 10px;
+  }
+}
